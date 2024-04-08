@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(90deg, hsl(43, 84%, 85%) 0%, hsl(215, 70%, 70%) 0%, hsl(229, 67%, 69%) 28%, hsl(236, 67%, 55%) 100%);
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+body .animation .rain {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 5000;
+}
+body .animation .bird {
+  background-image: url(../images/bird.gif);
+  background-repeat: repeat-x;
+  height: 250px;
+  width: 500px;
+  position: absolute;
+  top: 100px;
+  left: 10px;
+  transform: rotate(180deg);
+  animation: bird linear 50s infinite;
+}
+body .animation .cloud {
+  background: url(../images/cloud.png) no-repeat center/cover;
+  height: 350px;
+  width: 800px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  animation: cloud linear 15s infinite;
+}
+body .animation .cloud1 {
+  background: url(../images/cloud1.png) no-repeat center/cover;
+  height: 250px;
+  width: 700px;
+  position: absolute;
+  top: 400px;
+  right: 0;
+  animation: cloud linear 50s infinite;
+}
+body .animation .build {
+  background: url(../images/building.png) repeat-x;
+  height: 1200px;
+  width: 800vw;
+  position: absolute;
+  bottom: 200px;
+  animation: build linear 50s infinite;
+}
+body .animation .car {
+  background-image: url(../images/Audi-Car-Real-PNG.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  left: 250px;
+  height: 300px;
+  width: 750px;
+  position: absolute;
+  bottom: 100px;
+  z-index: 55;
+  animation: shake linear 0.3s infinite;
+}
+body .animation .car .whell img {
+  width: 90px;
+  animation: whell linear 0.3s infinite;
+  position: absolute;
+  bottom: 50px;
+  left: 120px;
+}
+body .animation .car .whell .right {
+  left: 500px;
+}
+body .animation .car .whell .smoke {
+  width: 200px;
+  animation: none;
+  transform: rotate(-90deg);
+  left: -90px;
+  bottom: 20px;
+}
+body .animation .car .light {
+  height: 10px;
+  width: 20px;
+  position: absolute;
+  right: 100px;
+  bottom: 125px;
+  border-radius: 10px;
+  opacity: 0.5;
+}
+body .animation .road {
+  background: url(../images/road.jpeg) repeat-x;
+  position: absolute;
+  height: 250px;
+  width: 800vw;
+  bottom: -50px;
+  animation: road linear 10s infinite;
+}
+body .animation .grass {
+  background: url(../images/grass.png) repeat-x;
+  height: 200px;
+  width: 800vw;
+  position: absolute;
+  bottom: 0;
+  animation: grass linear 16s infinite;
+}
+
+@keyframes bird {
+  100% {
+    transform: translateX(900vw);
+  }
+}
+@keyframes cloud {
+  100% {
+    transform: translateX(-100vw);
+  }
+}
+@keyframes build {
+  100% {
+    transform: translateX(-100px);
+  }
+}
+@keyframes whell {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes shake {
+  0% {
+    transform: translateY(-5px);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(-5px);
+  }
+}
+@keyframes z {
+  100% {
+    transform: translateX(-500vw);
+  }
+}
+@keyframes grass {
+  100% {
+    transform: translateX(-500vw);
+  }
+}/*# sourceMappingURL=style.css.map */
